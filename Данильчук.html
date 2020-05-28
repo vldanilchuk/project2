@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=”UTF-8”>
+    <title>Розкажіть трошки про себе</title>
+    <style>
+        input:focus:invalid,
+        textarea:focus:invalid {
+            border: 1px solid #F5192F;
+            box-shadow: 0 0 4px #F5192F;
+        }
+
+        input:focus:valid,
+        textarea:focus:valid {
+            border: 1px solid #64C364;
+            box-shadow: 0 0 4px #64C364;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Зареєструватись</legend>
+            <p>Ім'я </p>
+            <input type="text" name="name">
+            <br>Прізвище<br>
+            <input type="text" name="name">
+            <p>Стать</p>
+                    <br>
+                     <input type="radio" name="gender" required> Чоловік <input type="radio" name="gender" required> Жінка
+                    <br>
+            <p>Вік <input type="text" name="name"> років </p>
+            <br>
+            <br>
+            <input type="submit" value="Відправити">
+        </fieldset>
+        <fieldset>
+            <legend>Детальнішу про себе</legend>
+            <br><input type="radio" name="gender" required> Молодий чоловік <br>
+            <br><input type="radio" name="gender" required> Дівчина <br>
+            <p><input type="text" name="datebirth">Дата народження</p>
+            <p><input type="text" name="name">Сімейний стан</p>
+            <p><input type="text" name="name">Соціальний статус</p>
+            <p><input type="text" name="name"> Місце проживання</p>
+            <p>Що Ви зазвичай робите на вихідних</p>
+        </fieldset>
+        <fieldset>
+            <br>
+        <input type="checkbox" name="terms" required> Гуляю <br>
+        <input type="checkbox" name="terms" required> Ходжу на рибалку <br>
+        <input type="checkbox" name="terms" required> Граю в ігри <br>
+        <br>Розповісти про форми в книзі присвяченій HTML <br>
+        <p> <select>
+            <option>Сайт</option>
+            <option>Книга</option>
+          </select></p>
+        </fieldset>
+        <p>Скільки книг ви прочитали за своє життя?</p>
+        <p><input type="radio" name="terms" required> 0-10 <br></p>
+        <p><input type="radio" name="terms" required> 11-20 <br></p>
+        <p><input type="radio" name="terms" required> 21-50 <br></p>
+        <p><input type="radio" name="terms" required> 50+ <br></p>
+        <p>Ваші коментарі</p>
+        <textarea name="textarea" required maxlength="100"> </textarea>
+    </form>
+</body>
+</html>
